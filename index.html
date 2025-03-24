@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark"style="overflow-x: hidden;">
+<html lang="en" data-theme="dark" style="overflow-x: hidden;">
 
 <head>
     <!-- Required HEAD elements for full responsiveness -->
@@ -2297,6 +2297,105 @@
                     display: flex;
                 }
             }
+
+            /* Light Theme Specific CSS Updates */
+
+            html[data-theme="light"] {
+                /* Background colors */
+                --bg-color: var(--bg-color-light);
+                --bg-color-secondary: var(--bg-color-light-secondary);
+                --bg-color-tertiary: var(--bg-color-light-tertiary);
+
+                /* Text colors */
+                --text-color: var(--text-color-light);
+                --text-secondary: var(--text-secondary-light);
+
+                /* Accent colors */
+                --accent: var(--accent-light);
+                --accent-hover: var(--accent-light-hover);
+                --accent-transparent: var(--accent-light-transparent);
+                --accent-gradient: var(--accent-light-gradient);
+
+                /* Component styles */
+                --card-bg: var(--card-bg-light);
+                --card-border: var(--card-border-light);
+                --card-shadow: var(--card-shadow-light);
+                --nav-bg: var(--nav-bg-light);
+                --code-bg: var(--code-bg-light);
+                --hero-gradient: var(--hero-gradient-light);
+            }
+
+            /* Light theme SVG styles */
+            html[data-theme="light"] .hero-image svg {
+                background-color: var(--bg-color-light-secondary);
+            }
+
+            html[data-theme="light"] .doc-svg .bg-fill {
+                fill: url(#bgGradientLight);
+            }
+
+            html[data-theme="light"] .doc-svg .text-primary {
+                fill: #1a1a1a;
+            }
+
+            html[data-theme="light"] .doc-svg .text-secondary {
+                fill: #4a5568;
+            }
+
+            html[data-theme="light"] .doc-svg .card-bg {
+                fill: #ffffff;
+            }
+
+            html[data-theme="light"] .doc-svg .card-stroke {
+                stroke: rgba(0, 0, 0, 0.1);
+            }
+
+            html[data-theme="light"] .doc-svg .code-bg {
+                fill: #f1f5f9;
+            }
+
+            /* Stats section background for light mode */
+            html[data-theme="light"] section[style*="background: linear-gradient(135deg, #16213e 0%, #0d0d0d 100%)"] {
+                background: linear-gradient(135deg, #f8f9fa 0%, #e2e8f0 100%) !important;
+            }
+
+            html[data-theme="light"] section[style*="background: linear-gradient(135deg, #16213e 0%, #0d0d0d 100%)"] div[style*="color: var(--website-heading-text)"] {
+                color: var(--text-secondary-light) !important;
+            }
+
+            html[data-theme="light"] section[style*="background: linear-gradient(135deg, #16213e 0%, #0d0d0d 100%)"] div[style*="color: var(--primary-color)"] {
+                color: var(--accent-light) !important;
+            }
+
+            /* Mobile menu light theme adjustments */
+            html[data-theme="light"] .mobile-menu-toggle span {
+                background-color: var(--text-color-light);
+            }
+
+            /* Code block adjustments for light theme */
+            html[data-theme="light"] .code-keyword {
+                color: #0074d9;
+            }
+
+            /* Button adjustments for better contrast in light mode */
+            html[data-theme="light"] .btn-secondary {
+                border-color: var(--accent-light);
+                color: var(--text-secondary-light);
+            }
+
+            html[data-theme="light"] .btn-secondary:hover {
+                background-color: var(--accent-light-transparent);
+                color: var(--text-color-light);
+            }
+
+            /* FAQ toggle button light theme */
+            html[data-theme="light"] .faq-toggle {
+                background-color: var(--accent-light-transparent);
+            }
+
+            html[data-theme="light"] .faq-toggle i {
+                color: var(--accent-light);
+            }
         </style>
 
     </head>
@@ -2891,19 +2990,22 @@ public class HelloController {
                         <img src="./images/Telusko (1).png" alt="Telusko Logo">
                     </div>
                     <p class="footer-description">
-                        Empowering developers with comprehensive documentation and structured learning paths to master programming technologies.
+                        Empowering developers with comprehensive documentation and structured learning paths to master
+                        programming technologies.
                     </p>
                     <div class="social-links">
                         <a href="https://www.youtube.com/@Telusko" class="social-link" aria-label="YouTube">
                             <i class="fab fa-youtube"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/navinreddy20/?original_referer=https%3A%2F%2Ftelusko.com%2F" class="social-link" aria-label="LinkedIn">
+                        <a href="https://www.linkedin.com/in/navinreddy20/?original_referer=https%3A%2F%2Ftelusko.com%2F"
+                            class="social-link" aria-label="LinkedIn">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
                         <a href="https://x.com/navinreddy20" class="social-link" aria-label="Twitter">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="https://www.instagram.com/navinreddyofficial/" class="social-link" aria-label="Instagram">
+                        <a href="https://www.instagram.com/navinreddyofficial/" class="social-link"
+                            aria-label="Instagram">
                             <i class="fab fa-instagram"></i>
                         </a>
                     </div>
